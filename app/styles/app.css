@@ -1,0 +1,160 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    display: block;
+    position: fixed;
+    padding-left: 250px;
+}
+
+.navbar-header {
+    float: none;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background: none !important;
+}
+
+.navbar-collapse {
+    border-top: 10px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.navbar-collapse.collapse {
+    display: none!important;
+}
+
+.navbar-collapse.collapse {
+    display: none!important;
+}
+
+.collapsing {
+    display: none;
+}
+
+.collapse {
+    position: absolute;
+    padding-left: 275px;
+}
+
+.collapse > .well{
+    width: 250px;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+
+.collapse > .well > .nav-sidebar{
+    border-radius: 6px;
+}
+
+.main {
+    padding-left: 50px;
+}
+
+.navbar-fixed-top {
+    border: 0;
+    background: #2bb673;
+}
+
+.navbar-brand {
+    padding-top: 0px !important;
+}
+
+.logo {
+    padding-left: 5px;
+}
+
+.sidebar {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 250px !important;
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #fceac6;
+    border-right: 1px solid #eee;
+  }
+}
+
+.nav-sidebar {
+    background: #fceac6;
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.nav-sidebar > li > a {
+    color: black !important;
+}
+
+.nav-sidebar > li > a:hover{
+    background: #f9d99a;
+}
+
+.nav-sidebar .active {
+    background: #f9d99a;
+    text-decoration: underline;
+    text-transform: capitalize;
+    border-radius: 6px;
+}
+
+.table.table-condensed tr td {
+   border-bottom: 0,5px solid grey;
+}
+
+tbody {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+tbody > .products {
+    height: 150px;
+    vertical-align: middle;
+}
+
+tbody > .products > .a{
+    padding-top: 50px;
+}
+
+tbody >  .products > .b{
+    vertical-align: middle;
+}
+
+.btn-circle {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 45px;
+    background-color: #2BB673;
+}
+
+.fa-user {
+    color: white;
+}
+
+.modal{
+    position: absolute;
+    border-radius: 6px;
+    left: 15%;
+    right: auto;
+    text-align: left;
+    background-color: white;
+    height: 210px;
+    width: 500px;
+}

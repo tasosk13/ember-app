@@ -1,0 +1,65 @@
+<div class="container-fluid">
+
+    <table class="table table-condensed">
+        <thead>
+            <tr col-sd-12>
+                <h2>My offers</h2>
+            </tr>
+        </thead>
+        <tbody>
+
+            {{#each model as |myOffer|}}
+            <tr class="products">
+                <td class="a">
+                    <tr>
+                        <b>Product: </b>{{myOffer.name}}
+                    </tr>
+                    <tr>
+                        <b>Until: </b>{{myOffer.until}}
+                    </tr>
+                    <tr>
+                        <b>Min Bid: </b>{{myOffer.minBid}}
+                    </tr>
+                </td>
+                <td class="a">
+                    <tr>
+                        <b>Location: </b>{{myOffer.location}}
+                    </tr>
+                    <tr>
+                        <b>Capacity: </b>{{myOffer.capacity}}
+                    </tr>
+                    <tr>
+                        <b>High Bid: </b>{{myOffer.highBid}}
+                    </tr>
+                </td>
+                <td class="a">
+                    <tr>
+                        <b>Status: </b>{{myOffer.status}}
+                    </tr>
+                </td>
+                <td class="b">
+                    <a href="#myModal" role="button" class="btn btn-default btn-circle" data-toggle="modal">
+
+                        <b class="fa fa-user">See Details</b>
+
+                        <div id="myModal" class="modal fade">
+                            <div class="modal-header">
+                                <h3>{{myOffer.name}}</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Description…</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="myOffers" class="btn btn-primary">Close</a>
+                            </div>
+                        </div>
+                    </a>
+                </td>
+            </tr>
+
+            {{/each}}
+
+        </tbody>
+    </table>
+
+</div>
